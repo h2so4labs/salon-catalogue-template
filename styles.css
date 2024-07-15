@@ -1,0 +1,67 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+.head {
+  font-size: small;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/GIF.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 10px;
+  height: 60vh;
+}
+
+.hero h1,
+.hero h2 {
+  color: white;
+  text-align: center;
+}
+
+.about-us,
+.gallery,
+.call-to-action,
+.map-section,
+.footer {
+  padding: 60px 0;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.call-to-action {
+  background-color: #f8f9fa;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.gallery-buttons {
+  margin-bottom: 20px;
+}
+
+.gallery-buttons button {
+  margin: 5px;
+}
+
+.gallery-images {
+  display: none;
+}
+
+.gallery-images.active {
+  display: block;
+}

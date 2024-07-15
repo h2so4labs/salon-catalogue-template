@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sassy Oscar</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="text-center bg-dark text-white head">
+      Experience the Best Beauty and Wellness Services
+    </div>
+
+    <div class="hero">
+      <h1>Sassy hair styles</h1>
+    </div>
+
+    <!-- <div class="hero">
+      <img src="./assets/contact us.jpeg" alt="HERO" />
+    </div> -->
+
+    <section class="about-us py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>About Us</h2>
+            <p class="lead">
+              Welcome to Sassy Oscar, where we offer the best nightlife
+              experience with exquisite food and drinks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Gallery</h2>
+            <div class="gallery-buttons">
+              <button class="btn btn-primary" onclick="showGallery('oscar')">
+                Salon
+              </button>
+              <button class="btn btn-secondary" onclick="showGallery('sassy')">
+                Hairstyles
+              </button>
+              <button class="btn btn-success" onclick="showGallery('food')">
+                Care
+              </button>
+              <button class="btn btn-info" onclick="showGallery('drinks')">
+                Art
+              </button>
+            </div>
+            <div id="oscar" class="gallery-images active">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image1.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 1 "
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image2.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 2"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image3.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 3"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image1.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 4"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image2.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 5"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image3.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 6"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image1.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 7"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/image2.jpeg"
+                    class="img-fluid"
+                    alt="Oscar Image 8"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="sassy" class="gallery-images">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy1.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 1"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy2.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 2"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy3.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 3"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy4.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 4"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy5.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 5"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy6.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 6"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy7.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 7"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/sassy8.jpeg"
+                    class="img-fluid"
+                    alt="Sassy Image 8"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="food" class="gallery-images">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food1.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 1"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food2.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 2"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food3.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 3"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food4.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 4"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food5.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 5"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food6.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 6"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food7.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 7"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/food8.jpeg"
+                    class="img-fluid"
+                    alt="Food Image 8"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="drinks" class="gallery-images">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks1.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 1"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks2.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 2"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks3.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 3"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks4.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 4"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks5.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 5"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks6.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 6"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks7.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 7"
+                  />
+                </div>
+                <div class="col-md-3 mb-4">
+                  <img
+                    src="./assets/drinks8.jpeg"
+                    class="img-fluid"
+                    alt="Drinks Image 8"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action py-5 bg-light text-center">
+      <div class="container">
+        <h2>Ready to get started?</h2>
+        <p class="lead">
+          Click the button below to learn more about our services.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+      </div>
+    </section>
+
+    <section class="map-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Our Location</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9775636275363!2d77.56398017481878!3d12.909163516244606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1721048505591!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Sassy Oscar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
