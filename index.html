@@ -16,22 +16,55 @@
     </div>
 
     <div class="hero">
-      <h1>Sassy hair styles</h1>
+      <div class="overlay">
+        <h1>Sassy Hair Styles</h1>
+      </div>
     </div>
 
-    <!-- <div class="hero">
-      <img src="./assets/contact us.jpeg" alt="HERO" />
-    </div> -->
-
-    <section class="about-us py-5">
+    <section class="about-us">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
             <h2>About Us</h2>
             <p class="lead">
-              Welcome to Sassy Oscar, where we offer the best nightlife
-              experience with exquisite food and drinks.
+              Welcome to Sassy Oscar, your go-to destination for the latest in
+              beauty and wellness. Nestled in the heart of New Delhi, our salon
+              offers a luxurious and relaxing environment where you can unwind
+              and rejuvenate.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-3">
+            <h2>Our Work</h2>
+          </div>
+        </div>
+        <div class="row row-cols-2 mx-auto">
+          <div class="col-6 col-md-4 mb-3">
+            <img
+              src="./assets/image1.jpeg"
+              class="img-fluid"
+              alt="Work Image 1"
+            />
+          </div>
+          <div class="col-6 col-md-4 mb-4">
+            <img
+              src="./assets/image2.jpeg"
+              class="img-fluid"
+              alt="Work Image 2"
+            />
+          </div>
+          <div class="col-6 col-md-4 mb-4">
+            <img
+              src="./assets/image2.jpeg"
+              class="img-fluid"
+              alt="Work Image 3"
+            />
           </div>
         </div>
       </div>
@@ -43,74 +76,86 @@
           <div class="col-md-12 text-center">
             <h2>Gallery</h2>
             <div class="gallery-buttons">
-              <button class="btn btn-primary" onclick="showGallery('oscar')">
+              <button
+                class="btn btn-light btn-outline-dark"
+                onclick="showGallery('oscar')"
+              >
                 Salon
               </button>
-              <button class="btn btn-secondary" onclick="showGallery('sassy')">
+              <button
+                class="btn btn-light btn-outline-dark"
+                onclick="showGallery('sassy')"
+              >
                 Hairstyles
               </button>
-              <button class="btn btn-success" onclick="showGallery('food')">
+              <button
+                class="btn btn-light btn-outline-dark"
+                onclick="showGallery('food')"
+              >
                 Care
               </button>
-              <button class="btn btn-info" onclick="showGallery('drinks')">
+              <button
+                class="btn btn-light btn-outline-dark"
+                onclick="showGallery('drinks')"
+              >
                 Art
               </button>
             </div>
             <div id="oscar" class="gallery-images active">
               <div class="row">
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
                     src="./assets/image1.jpeg"
-                    class="img-fluid"
-                    alt="Oscar Image 1 "
+                    class="img-fluid gallery-img"
+                    alt="Oscar Image 1"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
                     src="./assets/image2.jpeg"
-                    class="img-fluid"
+                    class="img-fluid gallery-img"
                     alt="Oscar Image 2"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/image3.jpeg"
-                    class="img-fluid"
+                    src="./assets/image2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Oscar Image 3"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
                     src="./assets/image1.jpeg"
-                    class="img-fluid"
+                    class="img-fluid gallery-img"
                     alt="Oscar Image 4"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
                     src="./assets/image2.jpeg"
-                    class="img-fluid"
+                    class="img-fluid gallery-img"
                     alt="Oscar Image 5"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/image3.jpeg"
-                    class="img-fluid"
+                    src="./assets/image2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Oscar Image 6"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
                     src="./assets/image1.jpeg"
-                    class="img-fluid"
+                    class="img-fluid gallery-img"
                     alt="Oscar Image 7"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
                     src="./assets/image2.jpeg"
-                    class="img-fluid"
+                    class="img-fluid gallery-img"
                     alt="Oscar Image 8"
                   />
                 </div>
@@ -118,59 +163,59 @@
             </div>
             <div id="sassy" class="gallery-images">
               <div class="row">
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy1.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 1"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy2.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 2"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy3.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 3"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy4.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 4"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy5.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 5"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy6.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 6"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy7.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 7"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/sassy8.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Sassy Image 8"
                   />
                 </div>
@@ -178,59 +223,59 @@
             </div>
             <div id="food" class="gallery-images">
               <div class="row">
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food1.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 1"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food2.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 2"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food3.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 3"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food4.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 4"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food5.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 5"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food6.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 6"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food7.jpeg"
-                    class="img-fluid"
+                    src="./assets/2.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 7"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/food8.jpeg"
-                    class="img-fluid"
+                    src="./assets/1.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Food Image 8"
                   />
                 </div>
@@ -238,59 +283,59 @@
             </div>
             <div id="drinks" class="gallery-images">
               <div class="row">
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-3">
                   <img
-                    src="./assets/drinks1.jpeg"
-                    class="img-fluid"
+                    src="./assets/3.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 1"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/drinks2.jpeg"
-                    class="img-fluid"
+                    src="./assets/4.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 2"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/drinks3.jpeg"
-                    class="img-fluid"
+                    src="./assets/3.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 3"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/drinks4.jpeg"
-                    class="img-fluid"
+                    src="./assets/4.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 4"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/drinks5.jpeg"
-                    class="img-fluid"
+                    src="./assets/3.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 5"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/drinks6.jpeg"
-                    class="img-fluid"
+                    src="./assets/4.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 6"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/drinks7.jpeg"
-                    class="img-fluid"
+                    src="./assets/3.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 7"
                   />
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-6 col-md-3 mb-4">
                   <img
-                    src="./assets/drinks8.jpeg"
-                    class="img-fluid"
+                    src="./assets/4.jpeg"
+                    class="img-fluid gallery-img"
                     alt="Drinks Image 8"
                   />
                 </div>
@@ -311,30 +356,53 @@
       </div>
     </section>
 
-    <section class="map-section py-5">
-      <div class="container">
+    <div class="map-section py-5">
+      <div class="col-md-8">
+        <h2 class="text-center">Our Location</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9775636275363!2d77.56398017481878!3d12.909163516244606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1721048505591!5m2!1sen!2sin"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center">
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="text-center">Our Location</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9775636275363!2d77.56398017481878!3d12.909163516244606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1721048505591!5m2!1sen!2sin"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
+          <div class="col-12">
+            <div class="footer-content">
+              <a href="#" class="logo">
+                <img src="./assets/logo.jpeg" alt="Logo" />
+              </a>
+              <div class="footer-links">
+                <a href="#">Sassy</a>
+              </div>
+              -------------------------------------------------------------------------------------
+              <p class="average-cost">Average Cost</p>
+              <p>INR 200 for basic</p>
+              <h3>Opening Hours</h3>
+              <p>7:00 PM - 8:00 PM</p>
+              -------------------------------------------------------------------------------------
+              <p>The best Salon in Delhi!!</p>
+              <h3>Contact Us</h3>
+              <p>
+                Email:
+                <a href="mailto:info@sassyindia.in">info@sassyindia.in</a>
+              </p>
+              <p>WhatsApp: <a href="tel:+918527899963">+91 987654321</a></p>
+              <p>
+                Address: 1234, Connaught Place, Near Regal Cinema, New Delhi,
+                Delhi 110001 India
+              </p>
+
+              -------------------------------------------------------------------------------------
+              <p class="copyright">
+                @Copyright 2021 Sassy Limited Powered by UpSale Suite
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer class="footer bg-dark text-white py-4">
-      <div class="container text-center">
-        <p>&copy; 2024 Sassy Oscar. All rights reserved.</p>
       </div>
     </footer>
 
