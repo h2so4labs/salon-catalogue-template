@@ -3,12 +3,14 @@ body {
   line-height: 1.6;
 }
 
+/* 1 */
 .head {
   font-size: small;
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
 
+/* 2 */
 .hero {
   display: flex;
   align-items: center;
@@ -43,17 +45,18 @@ body {
 
 .hero h1 {
   color: white;
-  font-family: "Arial", sans-serif;
   font-size: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   animation: fadeInUp 1s ease-in-out;
 }
 
+/* 3 */
 .about-us,
 .gallery,
 .call-to-action,
-.footer {
-  padding: 60px 0;
+.footer,
+.image-gallery {
+  padding: 40px 0 20px 0;
 }
 
 .img-fluid {
@@ -61,28 +64,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.map-section {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .gallery img {
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: 10px;
   animation: fadeInUp 1s ease-in-out;
-}
-
-.call-to-action {
-  background-color: #f8f9fa;
-}
-
-.footer {
-  background-color: #343a40;
-  color: #fff;
 }
 
 .gallery-buttons {
@@ -101,13 +87,28 @@ body {
   display: block;
 }
 
-/* Footer */
+/* 4 */
+
+.call-to-action {
+  background-color: #f8f9fa;
+}
+
+/* 5 */
+
+.map-section {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 6 */
 .footer {
   background-color: #000;
   color: #fff;
   padding: 40px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
 }
 
 .footer .logo img {
@@ -137,12 +138,6 @@ body {
   margin-top: 20px;
 }
 
-.footer h3 {
-  margin: 20px 0 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .footer p {
   margin: 5px 0;
   font-size: 14px;
@@ -150,25 +145,9 @@ body {
 
 .footer a {
   color: #ccc;
-  text-decoration: none;
 }
 
 .footer a:hover {
-  color: #fff;
-}
-
-.footer .social-icons {
-  margin: 20px 0;
-}
-
-.footer .social-icons a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 20px;
-  margin: 0 10px;
-}
-
-.footer .social-icons a:hover {
   color: #fff;
 }
 
@@ -178,14 +157,41 @@ body {
   color: #777;
 }
 
+/* 7 */
 hr {
   color: #fff;
 }
 
+h1,
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: semi-bold;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 8 */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
