@@ -12,29 +12,15 @@
     <link rel="stylesheet" href="roboto.css" />
   </head>
   <body>
-    <div class="text-center bg-dark text-white head">
+    <div class="text-center text-white head">
       Experience the Best Beauty and Wellness Services
     </div>
-
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="d-flex align-items-center justify content-left">
-          <img
-            src="./assets/logo.png"
-            alt="Logo"
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          <div class="pl-3">Hair Styles</div>
-        </div>
-      </div>
-    </nav>
 
     <!-- 1 -->
     <div class="hero d-flex align-items-center justify-content-center">
       <div class="overlay">
         <h1>Sassy Hair Styles</h1>
+        <p>Experience the Best Beauty and Wellness Services</p>
       </div>
     </div>
 
@@ -162,7 +148,7 @@
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/image4.jpeg"
+                      src="./assets/image2.jpeg"
                       class="img-fluid gallery-img"
                       alt="salon Image 4"
                     />
@@ -278,13 +264,13 @@
     </section>
 
     <!-- 4 -->
-    <section class="call-to-action py-5 bg-light text-center">
+    <section class="call-to-action py-5 text-center">
       <div class="container">
         <h2>Ready to get started?</h2>
         <p class="lead">
           Click the button below to learn more about our services.
         </p>
-        <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+        <a href="#" class="btn btn-warning btn-lg">Learn More</a>
       </div>
     </section>
 
@@ -304,27 +290,32 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-12">
+          <!-- Middle Column (Logo) -->
+          <div class="col-lg-6 col-md-12 order-0 order-md-1">
+            <a href="#" class="logo">
+              <img src="./assets/logo.png" alt="Logo" />
+            </a>
+          </div>
+
+          <!-- Left Column -->
+          <div class="col-lg-3 col-md-12 order-1 order-md-0">
             <div class="footer-content">
-              <a href="#" class="logo">
-                <img src="./assets/logo.png" alt="Logo" />
-              </a>
               <div class="footer-links">
                 <a href="#">Sassy</a>
               </div>
               <hr class="d-lg-none" />
-
               <p class="average-cost">Average Cost</p>
               <p>INR 200 for basic</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12">
-            <div class="footer-content">
               <h3>Opening Hours</h3>
               <p>7:00 PM - 8:00 PM</p>
               <hr class="d-lg-none" />
               <p>The best Salon in Delhi!!</p>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-3 col-md-12 order-2">
+            <div class="footer-content">
               <h3>Contact Us</h3>
               <p>
                 Email:
@@ -336,13 +327,13 @@
                 Delhi 110001 India
               </p>
               <hr class="d-lg-none" />
-              <p class="copyright">
-                @Copyright 2021 Sassy Limited Powered by UpSale Suite
-              </p>
             </div>
           </div>
         </div>
       </div>
+      <p class="copyright">
+        @Copyright 2021 Sassy Limited Powered by UpSale Suite
+      </p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
