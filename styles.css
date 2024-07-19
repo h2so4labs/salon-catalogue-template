@@ -1,8 +1,6 @@
 body {
   font-family: "Roboto";
   line-height: 1.6;
-  background-color: #f5a162;
-  color: #fff;
 }
 
 :root {
@@ -17,16 +15,59 @@ body {
   background-color: #5d3a1a;
 }
 
+.collapse-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20rem;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  z-index: 1050;
+}
+
+.collapse.show {
+  transform: translateX(0);
+  color: #333;
+}
+
+.service-list li {
+  background-color: #e9ecef;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  border: 1px solid #ddd;
+}
+
+.service-list li:hover {
+  background-color: #ced4da;
+  transform: scale(1.02);
+}
+
+.service-list li:before {
+  content: "\2022";
+  font-size: 20px;
+  color: #5d3a1a;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ham {
+  cursor: pointer;
+  color: #333;
+}
+
 .hero {
   background-image: url("./assets/GIF.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 10px;
-  height: calc(95vh - var(--header-height));
+  height: calc(100vh - 2.5 * var(--header-height));
   overflow: hidden;
-  border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -55,15 +96,33 @@ body {
 
 .about-us,
 .gallery,
-.call-to-action,
-.footer,
-.image-gallery {
+.footer {
   padding: 40px 0 20px 0;
 }
 
 .img-fluid {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  padding: 50px 0;
+}
+
+.image-gallery .work-item {
+  padding: 15px;
+  background-color: #343a40;
+  border-radius: 5px;
+  text-align: center;
+}
+.image-gallery .work-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.image-gallery .work-item h2,
+.image-gallery .work-item p {
+  color: #fff;
+  margin-top: 10px;
 }
 
 .gallery img {
@@ -87,6 +146,10 @@ body {
   display: none;
 }
 
+.gallery-images h3 {
+  font-size: 1.5rem;
+}
+
 .gallery-images.active {
   display: block;
 }
@@ -100,14 +163,35 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  opacity: 0.7;
   color: white;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-btn h1 {
   font-size: 1.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   animation: fadeInUp 1s ease-in-out;
+}
+
+.call-to-action {
+  background-image: url("./assets/contact.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px 0;
+}
+
+.call-to-action h2,
+.call-to-action p {
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.call-to-action .btn {
+  margin-top: 20px;
 }
 
 .map-section {
@@ -183,7 +267,6 @@ h2 {
 .about-us p,
 .call-to-action p {
   margin-bottom: 10px;
-  color: #333;
 }
 
 button.btn-cta {
@@ -209,11 +292,13 @@ button.btn-cta:hover {
     font-size: 2rem;
   }
 
+  .image-gallery h2 {
+    font-size: 1.5rem;
+  }
+
   .about-us,
   .gallery,
-  .call-to-action,
-  .footer,
-  .image-gallery {
+  .footer {
     padding: 20px 0;
   }
 }

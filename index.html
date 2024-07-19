@@ -12,12 +12,83 @@
     <link rel="stylesheet" href="roboto.css" />
   </head>
   <body>
-    <div class="text-center text-white head">
+    <div class="text-center text-white head" onclick="closeNav()">
       Experience the Best Beauty and Wellness Services
     </div>
 
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-dark sticky-top"
+      onclick="closeNav()"
+    >
+      <div
+        class="container-fluid d-flex justify-content-space-between align-items-center"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="align-text-top pr-2"
+          />
+          <span class="text-white">Hairstyles</span>
+        </a>
+        <div
+          class="ham bg-dark pl-1 pr-2"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="./assets/ham.svg" alt="Menu" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="collapse collapse-left" id="navbarContent">
+      <div class="m-4">
+        <a class="navbar-brand" href="#" onclick="closeNav()">
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="align-text-top pr-2"
+          />
+          <span class="text-dark">Hairstyles</span>
+        </a>
+        <h3 class="my-4">Our Offerings</h3>
+        <ul class="service-list list-unstyled">
+          <li><strong>Bridal Makeup</strong></li>
+          <li><strong>Body Polishing</strong></li>
+          <li><strong>Bleach</strong></li>
+          <li><strong>Waxing</strong></li>
+          <li><strong>Thread Work</strong></li>
+          <li><strong>Facials and Skin Treatments</strong></li>
+          <li><strong>Hair Styling and Treatments</strong></li>
+          <li><strong>Pedicure/Manicure</strong></li>
+          <li><strong>Nail Extensions</strong></li>
+          <li><strong>Lash Extensions</strong></li>
+          <li><strong>Groom Services</strong></li>
+          <li><strong>Premium Groom Packages</strong></li>
+          <li><strong>Body Treatments</strong></li>
+          <li><strong>Female Packages</strong></li>
+          <li><strong>Kids Hair Cut</strong></li>
+          <li><strong>Hair Color Treatments</strong></li>
+          <li><strong>Chemical Damage Repair</strong></li>
+          <li><strong>Hair Rituals</strong></li>
+          <li><strong>Head Massage (20 Mins)</strong></li>
+          <li><strong>Loreal Scalp Therapy</strong></li>
+        </ul>
+      </div>
+    </div>
+
     <!-- 1 -->
-    <div class="hero d-flex align-items-center justify-content-center">
+    <div
+      class="hero d-flex align-items-center justify-content-center"
+      onclick="closeNav()"
+    >
       <div class="overlay">
         <h1>Sassy Hair Styles</h1>
         <p>Experience the Best Beauty and Wellness Services</p>
@@ -25,40 +96,69 @@
     </div>
 
     <!-- 2 -->
-    <section class="image-gallery">
+    <section class="image-gallery" onclick="closeNav()">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center mb-3">
-            <h2>Our Work</h2>
-          </div>
+        <div class="text-center">
+          <h2>Our Work</h2>
         </div>
-        <div class="row row-cols-2 mx-auto">
-          <div class="col-6 col-md-4 mb-3">
-            <img
-              src="./assets/image1.jpeg"
-              class="img-fluid"
-              alt="Work Image 1"
-            />
+        <div class="row mt-5">
+          <div class="col-6 col-md-3 mb-4">
+            <div class="work-item">
+              <img
+                src="./assets/image1.jpeg"
+                class="img-fluid"
+                alt="Work Image 1"
+              />
+              <div>
+                <h2>Work 1</h2>
+                <p>Description</p>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-md-4 mb-4">
-            <img
-              src="./assets/image2.jpeg"
-              class="img-fluid"
-              alt="Work Image 2"
-            />
+          <div class="col-6 col-md-3 mb-4">
+            <div class="work-item">
+              <img
+                src="./assets/image2.jpeg"
+                class="img-fluid"
+                alt="Work Image 2"
+              />
+              <div>
+                <h2>Work 2</h2>
+                <p>Description 2</p>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-md-4 mb-4">
-            <img
-              src="./assets/image2.jpeg"
-              class="img-fluid"
-              alt="Work Image 3"
-            />
+          <div class="col-6 col-md-3 mb-4">
+            <div class="work-item">
+              <img
+                src="./assets/image2.jpeg"
+                class="img-fluid"
+                alt="Work Image 2"
+              />
+              <div>
+                <h2>Work 3</h2>
+                <p>Description 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="work-item">
+              <img
+                src="./assets/image2.jpeg"
+                class="img-fluid"
+                alt="Work Image 2"
+              />
+              <div>
+                <h2>Work 4</h2>
+                <p>Description 4</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" onclick="closeNav()">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -75,13 +175,13 @@
     </section>
 
     <!-- 3 -->
-    <section class="gallery py-5">
+    <section class="gallery py-5" onclick="closeNav()">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
             <h2>Gallery</h2>
 
-            <div class="container mt-5">
+            <div class="container">
               <div class="row">
                 <div class="col-6 col-md-3 mb-4">
                   <div
@@ -89,7 +189,11 @@
                     onclick="showGallery('salon')"
                     style="background-image: url('./assets/image1.jpeg')"
                   >
-                    <h1>Salon</h1>
+                    <div class="overlay">
+                      <h1>
+                        Salon <img src="./assets/arrow.svg" alt="arrow" />
+                      </h1>
+                    </div>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 mb-4">
@@ -98,7 +202,11 @@
                     onclick="showGallery('hairstyles')"
                     style="background-image: url('./assets/1.jpeg')"
                   >
-                    <h1>Hairstyles</h1>
+                    <div class="overlay">
+                      <h1>
+                        Hairstyles <img src="./assets/arrow.svg" alt="arrow" />
+                      </h1>
+                    </div>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 mb-4">
@@ -107,7 +215,7 @@
                     onclick="showGallery('care') "
                     style="background-image: url('./assets/2.jpeg')"
                   >
-                    <h1>Care</h1>
+                    <h1>Care <img src="./assets/arrow.svg" alt="arrow" /></h1>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 mb-4">
@@ -116,14 +224,15 @@
                     onclick="showGallery('art')"
                     style="background-image: url('./assets/3.jpeg')"
                   >
-                    <h1>Art</h1>
+                    <h1>Art <img src="./assets/arrow.svg" alt="arrow" /></h1>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="container mt-5">
+            <div class="container">
               <div id="salon" class="gallery-images marquee-container">
+                <h3>SALON</h3>
                 <div class="marquee-content">
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
@@ -156,10 +265,8 @@
                 </div>
               </div>
 
-              <div
-                id="hairstyles"
-                class="gallery-images marquee-container mt-5"
-              >
+              <div id="hairstyles" class="gallery-images marquee-container">
+                <h3>HAIRSTYLES</h3>
                 <div class="marquee-content">
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
@@ -192,7 +299,8 @@
                 </div>
               </div>
 
-              <div id="care" class="gallery-images marquee-container mt-5">
+              <div id="care" class="gallery-images marquee-container">
+                <h3>CARE</h3>
                 <div class="marquee-content">
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
@@ -225,7 +333,8 @@
                 </div>
               </div>
 
-              <div id="art" class="gallery-images marquee-container mt-5">
+              <div id="art" class="gallery-images marquee-container">
+                <h3>ART</h3>
                 <div class="marquee-content">
                   <div class="col-6 col-md-3 mb-3 d-inline-block">
                     <img
@@ -264,7 +373,7 @@
     </section>
 
     <!-- 4 -->
-    <section class="call-to-action py-5 text-center">
+    <section class="call-to-action text-center" onclick="closeNav()">
       <div class="container">
         <h2>Ready to get started?</h2>
         <p class="lead">
@@ -287,7 +396,7 @@
     </div>
 
     <!-- 6 -->
-    <footer class="footer">
+    <footer class="footer" onclick="closeNav()">
       <div class="container">
         <div class="row">
           <!-- Middle Column (Logo) -->
@@ -332,7 +441,8 @@
         </div>
       </div>
       <p class="copyright">
-        @Copyright 2021 Sassy Limited Powered by UpSale Suite
+        @Copyright <span id="current-year"></span> Sassy Limited Powered by
+        UpSale Suite
       </p>
     </footer>
 
