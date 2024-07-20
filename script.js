@@ -19,3 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentYear = new Date().getFullYear();
   yearSpan.textContent = currentYear;
 });
+
+const video = document.getElementById("hoverVideo");
+
+video.addEventListener("mouseenter", () => {
+  video.play();
+});
+
+video.addEventListener("mouseleave", () => {
+  video.pause();
+  video.currentTime = 0;
+});

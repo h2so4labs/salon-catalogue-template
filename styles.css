@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto";
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
 }
 
@@ -57,7 +57,6 @@ body {
 
 .ham {
   cursor: pointer;
-  color: #333;
 }
 
 .hero {
@@ -94,35 +93,79 @@ body {
   animation: fadeInUp 1s ease-in-out;
 }
 
+.hero p {
+  color: white;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1s ease-in-out;
+}
+
 .about-us,
-.gallery,
 .footer {
   padding: 40px 0 20px 0;
 }
 
-.img-fluid {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .image-gallery {
   padding: 50px 0;
+  background: linear-gradient(145deg, #8b5e3c, #6a4b2f);
+  color: #ddd;
 }
 
-.image-gallery .work-item {
+.work-item {
+  height: 100%;
   padding: 15px;
   background-color: #343a40;
   border-radius: 5px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-.image-gallery .work-item img {
-  max-width: 100%;
-  border-radius: 5px;
+
+.work-item .image-container {
+  position: relative;
 }
-.image-gallery .work-item h2,
-.image-gallery .work-item p {
+
+.work-item .image-container img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.work-item .image-container .first-image {
+  max-height: 30vh;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.work-item .image-container .second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.work-item:hover .image-container .first-image {
+  opacity: 0;
+}
+
+.work-item:hover .image-container .second-image {
+  opacity: 1;
+}
+
+.work-item h2,
+.work-item p {
   color: #fff;
   margin-top: 10px;
+  z-index: 1;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.gallery {
+  color: white;
+  padding: 50px 0;
+  background: linear-gradient(145deg, #8b5e3c, #6a4b2f);
 }
 
 .gallery img {
@@ -164,34 +207,35 @@ body {
   background-position: center;
   position: relative;
   color: white;
-
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.gallery-btn h1 {
-  font-size: 1.2rem;
+.gallery-btn h2 {
+  font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   animation: fadeInUp 1s ease-in-out;
-}
-
-.call-to-action {
-  background-image: url("./assets/contact.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  padding: 50px 0;
 }
 
 .call-to-action h2,
 .call-to-action p {
   margin: 0;
   padding: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .call-to-action .btn {
   margin-top: 20px;
+}
+
+.btn-custom-outline {
+  background: transparent;
+  border: 2px solid;
+  color: #8b5e3c;
+  border-image: linear-gradient(145deg, #8b5e3c, #6a4b2f) 1;
+}
+
+.btn-custom-outline:hover {
+  background: linear-gradient(145deg, #8b5e3c, #6a4b2f);
+  color: white;
 }
 
 .map-section {
@@ -301,6 +345,18 @@ button.btn-cta:hover {
   .footer {
     padding: 20px 0;
   }
+
+  .work-item {
+    margin: 0 10px;
+  }
+
+  .gallery-btn h2 {
+    font-size: 1rem;
+  }
+}
+
+.social-icons {
+  font-size: 24px;
 }
 
 @keyframes fadeInUp {

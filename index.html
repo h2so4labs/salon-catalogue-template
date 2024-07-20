@@ -8,8 +8,18 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="roboto.css" />
   </head>
   <body>
     <div class="text-center text-white head" onclick="closeNav()">
@@ -21,6 +31,16 @@
       onclick="closeNav()"
     >
       <div
+        class="ham bg-dark pl-1 pr-2 d-none d-md-block"
+        data-toggle="collapse"
+        data-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img src="./assets/ham.svg" alt="Menu" />
+      </div>
+      <div
         class="container-fluid d-flex justify-content-space-between align-items-center"
       >
         <a class="navbar-brand" href="#">
@@ -29,12 +49,12 @@
             alt="Logo"
             width="30"
             height="24"
-            class="align-text-top pr-2"
+            class="align-text-top pr-2 d-md-none"
           />
-          <span class="text-white">Hairstyles</span>
+          <span class="text-white">The Sallure</span>
         </a>
         <div
-          class="ham bg-dark pl-1 pr-2"
+          class="ham bg-dark pl-1 pr-2 d-md-none"
           data-toggle="collapse"
           data-target="#navbarContent"
           aria-controls="navbarContent"
@@ -56,7 +76,7 @@
             height="24"
             class="align-text-top pr-2"
           />
-          <span class="text-dark">Hairstyles</span>
+          <span class="text-dark">The Sallure</span>
         </a>
         <h3 class="my-4">Our Offerings</h3>
         <ul class="service-list list-unstyled">
@@ -90,7 +110,16 @@
       onclick="closeNav()"
     >
       <div class="overlay">
-        <h1>Sassy Hair Styles</h1>
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            width="100"
+            height="100"
+            class="align-text-top pr-2 d-none d-md-block"
+          />
+        </a>
+        <h1>The Sallure Luxury Salon</h1>
         <p>Experience the Best Beauty and Wellness Services</p>
       </div>
     </div>
@@ -102,55 +131,148 @@
           <h2>Our Work</h2>
         </div>
         <div class="row mt-5">
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="work-item">
-              <img
-                src="./assets/image1.jpeg"
-                class="img-fluid"
-                alt="Work Image 1"
-              />
-              <div>
-                <h2>Work 1</h2>
-                <p>Description</p>
+              <div class="image-container">
+                <img
+                  src="./assets/7.png"
+                  alt="Work Image 1"
+                  class="first-image"
+                />
+                <img
+                  src="./assets/MB.gif"
+                  class="second-image"
+                  alt="Work Image 1"
+                />
+                <div>
+                  <h2>Makeup & Beauty</h2>
+                  <p>
+                    Our team of beauty professionals is passionate about what
+                    they do and committed to providing you with the best
+                    possible service.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="work-item">
-              <img
-                src="./assets/image2.jpeg"
-                class="img-fluid"
-                alt="Work Image 2"
-              />
-              <div>
-                <h2>Work 2</h2>
-                <p>Description 2</p>
+              <div class="image-container">
+                <img
+                  src="./assets/11.png"
+                  alt="Work Image 1"
+                  class="first-image"
+                />
+                <img
+                  src="./assets/hair.gif"
+                  class="second-image"
+                  alt="Work Image 2"
+                />
+                <div>
+                  <h2>Eyelash Extension</h2>
+                  <p>
+                    We offer a wide range of beauty services include Eyelash
+                    Extension. Our team is constantly provide you with the best
+                    possible service.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="work-item">
-              <img
-                src="./assets/image2.jpeg"
-                class="img-fluid"
-                alt="Work Image 2"
-              />
-              <div>
-                <h2>Work 3</h2>
-                <p>Description 3</p>
+              <div class="image-container">
+                <img
+                  src="./assets/9.png"
+                  alt="Work Image 1"
+                  class="first-image"
+                />
+                <img
+                  src="./assets/Nail Art.gif"
+                  class="second-image"
+                  alt="Work Image 2"
+                />
+                <div>
+                  <h2>Nail Art/ Extension</h2>
+                  <p>
+                    In addition to our beauty services, we also offer a nail art
+                    & Extension for our clients/customers to maintain their
+                    beauty with latest trend.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="work-item">
-              <img
-                src="./assets/image2.jpeg"
-                class="img-fluid"
-                alt="Work Image 2"
-              />
-              <div>
-                <h2>Work 4</h2>
-                <p>Description 4</p>
+              <div class="image-container">
+                <img
+                  src="./assets/3.png"
+                  alt="Work Image 1"
+                  class="first-image"
+                />
+                <img
+                  src="./assets/hair.gif"
+                  alt="Work Image 2"
+                  class="second-image"
+                />
+              </div>
+              <div class="work-description">
+                <h2>Hair Cut & Style</h2>
+                <p>
+                  At The Sallure Luxury Salon, we are committed to providing our
+                  clients with exceptional beauty services that leave them
+                  feeling confident and beautiful.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="work-item">
+              <div class="image-container">
+                <img
+                  src="./assets/12.png"
+                  alt="Work Image 1"
+                  class="first-image"
+                />
+                <img
+                  src="./assets/MP.gif"
+                  class="second-image"
+                  alt="Work Image 2"
+                />
+                <div>
+                  <h2>Manicure & Pedicure</h2>
+                  <p>
+                    We believe that beauty is not just about appearance, we
+                    create an environment where our clients can feel empowered
+                    and beautiful inside and out.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="work-item">
+              <div class="image-container">
+                <img
+                  src="./assets/10.png"
+                  alt="Work Image 1"
+                  class="first-image"
+                />
+                <img
+                  src="./assets/Men.gif"
+                  class="second-image"
+                  alt="Work Image 2"
+                />
+                <div>
+                  <h2>Men's Services</h2>
+                  <br />
+                  <p>
+                    We offer a wide range of beauty services for Men's,
+                    including haircuts and styling, colouring, manicures and
+                    pedicures, facials, makeup application, and waxing.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -164,10 +286,10 @@
           <div class="col-md-12 text-center">
             <h2>About Us</h2>
             <p class="lead">
-              Welcome to Sassy Oscar, your go-to destination for the latest in
-              beauty and wellness. Nestled in the heart of New Delhi, our salon
-              offers a luxurious and relaxing environment where you can unwind
-              and rejuvenate.
+              Welcome to Sallure Luxury Salon, your go-to destination for the
+              latest in beauty and wellness. Nestled in the heart of New Delhi,
+              our salon offers a luxurious and relaxing environment where you
+              can unwind and rejuvenate.
             </p>
           </div>
         </div>
@@ -179,52 +301,47 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Gallery</h2>
+            <h2 class="fst-italic">Gallery</h2>
 
             <div class="container">
               <div class="row">
-                <div class="col-6 col-md-3 mb-4">
+                <div class="col-6 col-md-4 mb-4">
                   <div
                     class="btn p-0 gallery-btn"
                     onclick="showGallery('salon')"
-                    style="background-image: url('./assets/image1.jpeg')"
+                    style="background-image: url('./assets/7.png')"
                   >
                     <div class="overlay">
-                      <h1>
-                        Salon <img src="./assets/arrow.svg" alt="arrow" />
-                      </h1>
+                      <h2>
+                        Bridal Makeup
+                        <img src="./assets/arrow.svg" alt="arrow" />
+                      </h2>
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
+                <div class="col-6 col-md-4 mb-4">
                   <div
                     class="btn p-0 gallery-btn"
                     onclick="showGallery('hairstyles')"
-                    style="background-image: url('./assets/1.jpeg')"
+                    style="background-image: url('./assets/3.png')"
                   >
                     <div class="overlay">
-                      <h1>
+                      <h2>
                         Hairstyles <img src="./assets/arrow.svg" alt="arrow" />
-                      </h1>
+                      </h2>
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
+                <div class="col-6 col-md-4 mb-4">
                   <div
                     class="btn p-0 gallery-btn"
                     onclick="showGallery('care') "
-                    style="background-image: url('./assets/2.jpeg')"
+                    style="background-image: url('./assets/9.png')"
                   >
-                    <h1>Care <img src="./assets/arrow.svg" alt="arrow" /></h1>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                  <div
-                    class="btn p-0 gallery-btn"
-                    onclick="showGallery('art')"
-                    style="background-image: url('./assets/3.jpeg')"
-                  >
-                    <h1>Art <img src="./assets/arrow.svg" alt="arrow" /></h1>
+                    <h2>
+                      Nail Art and Care
+                      <img src="./assets/arrow.svg" alt="arrow" />
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -232,32 +349,32 @@
 
             <div class="container">
               <div id="salon" class="gallery-images marquee-container">
-                <h3>SALON</h3>
+                <h3>Bridal Makeup</h3>
                 <div class="marquee-content">
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/image1.jpeg"
+                      src="./assets/7.png"
                       class="img-fluid gallery-img"
                       alt="salon Image 1"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/image2.jpeg"
+                      src="./assets/8.png"
                       class="img-fluid gallery-img"
                       alt="salon Image 2"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/image3.jpeg"
+                      src="./assets/8a.png"
                       class="img-fluid gallery-img"
                       alt="salon Image 3"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/image2.jpeg"
+                      src="./assets/14.png"
                       class="img-fluid gallery-img"
                       alt="salon Image 4"
                     />
@@ -270,28 +387,28 @@
                 <div class="marquee-content">
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/1.jpeg"
+                      src="./assets/3.png"
                       class="img-fluid gallery-img"
                       alt="hairstyles Image 1"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/2.jpeg"
+                      src="./assets/10.png"
                       class="img-fluid gallery-img"
                       alt="hairstyles Image 2"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/1.jpeg"
+                      src="./assets/5.png"
                       class="img-fluid gallery-img"
                       alt="hairstyles Image 3"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/2.jpeg"
+                      src="./assets/6.png"
                       class="img-fluid gallery-img"
                       alt="hairstyles Image 4"
                     />
@@ -300,32 +417,32 @@
               </div>
 
               <div id="care" class="gallery-images marquee-container">
-                <h3>CARE</h3>
+                <h3>Nail Art and Care</h3>
                 <div class="marquee-content">
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/2.jpeg"
+                      src="./assets/9.png"
                       class="img-fluid gallery-img"
                       alt="care Image 1"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/1.jpeg"
+                      src="./assets/11.png"
                       class="img-fluid gallery-img"
                       alt="care Image 2"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/2.jpeg"
+                      src="./assets/12.png"
                       class="img-fluid gallery-img"
                       alt="care Image 3"
                     />
                   </div>
                   <div class="col-6 col-md-3 mb-4 d-inline-block">
                     <img
-                      src="./assets/1.jpeg"
+                      src="./assets/13.png"
                       class="img-fluid gallery-img"
                       alt="care Image 4"
                     />
@@ -373,27 +490,32 @@
     </section>
 
     <!-- 4 -->
-    <section class="call-to-action text-center" onclick="closeNav()">
-      <div class="container">
-        <h2>Ready to get started?</h2>
-        <p class="lead">
-          Click the button below to learn more about our services.
-        </p>
-        <a href="#" class="btn btn-warning btn-lg">Learn More</a>
-      </div>
-    </section>
+    <section class="call-to-action text-center pt-5" onclick="closeNav()">
+      <div class="d-md-flex align-items-center justify-content-space-between">
+        <div class="container">
+          <h2>Ready to get started?</h2>
+          <p class="lead">Book an appointment to get in touch</p>
 
-    <!-- 5 -->
-    <div class="map-section py-5">
-      <div class="col-md-8">
-        <h2 class="text-center">Our Location</h2>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9775636275363!2d77.56398017481878!3d12.909163516244606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1721048505591!5m2!1sen!2sin"
-          ></iframe>
+          <a
+            href="https://wa.me/919999765778"
+            target="_blank"
+            class="btn btn-lg btn-custom-outline"
+          >
+            <img src="./assets/wa.svg" alt="wa" width="30" height="30" />
+            Schedule Appointment
+          </a>
+        </div>
+        <div class="col-md-6 py-5 pt-md-0">
+          <h2 class="text-center">Get Directions</h2>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4766988029205!2d77.16959977520315!3d28.645441983494898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0294d06f2d1b%3A0xcd65faf0ba1a0e03!2s11%2F15%2C%20Block%2011%2C%20East%20Patel%20Nagar%2C%20Patel%20Nagar%2C%20Delhi%2C%20New%20Delhi%2C%20Delhi%20110008!5e0!3m2!1sen!2sin!4v1721478192212!5m2!1sen!2sin"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- 6 -->
     <footer class="footer" onclick="closeNav()">
@@ -410,11 +532,10 @@
           <div class="col-lg-3 col-md-12 order-1 order-md-0">
             <div class="footer-content">
               <div class="footer-links">
-                <a href="#">Sassy</a>
+                <a href="#">The Sallure</a>
               </div>
               <hr class="d-lg-none" />
-              <p class="average-cost">Average Cost</p>
-              <p>INR 200 for basic</p>
+
               <h3>Opening Hours</h3>
               <p>7:00 PM - 8:00 PM</p>
               <hr class="d-lg-none" />
@@ -426,11 +547,20 @@
           <div class="col-lg-3 col-md-12 order-2">
             <div class="footer-content">
               <h3>Contact Us</h3>
-              <p>
-                Email:
-                <a href="mailto:info@sassyindia.in">info@sassyindia.in</a>
-              </p>
-              <p>WhatsApp: <a href="tel:+918527899963">+91 987654321</a></p>
+
+              <div>
+                <a href="https://www.instagram.com/salluresalon" target="_blank"
+                  ><img
+                    src="./assets/insta.svg"
+                    alt="insta"
+                    width="30"
+                    height="30"
+                /></a>
+                <a href="https://www.facebook.com/salluresalon/" target="_blank"
+                  ><img src="./assets/fb.svg" alt="fb" width="30" height="30"
+                /></a>
+              </div>
+
               <p>
                 Address: 1234, Connaught Place, Near Regal Cinema, New Delhi,
                 Delhi 110001 India
